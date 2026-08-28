@@ -1,24 +1,36 @@
-# Augusta Klimatechnik — сайт: как выложить в интернет (15 минут)
+# Augusta Klimatechnik — сайт и домен
 
-## Что в пакете
-- `index.html` — весь сайт одним файлом
-- `favicon.svg` — иконка для вкладки браузера
+## Текущее состояние
+- Код: https://github.com/hasskin/augusta-klimatechnik (пуш в `main` = автодеплой)
+- Сайт: https://hasskin.github.io/augusta-klimatechnik/ → после подключения домена
+  будет жить на https://augusta-klimatechnik.de/
+- Один файл `index.html` + `favicon.svg`, хостинг GitHub Pages (бесплатно)
 
-## Вариант 1: Netlify (бесплатно, ссылка сразу)
-1. Зарегистрируйтесь на https://app.netlify.com (можно через Google).
-2. Откройте https://app.netlify.com/drop
-3. Перетащите ПАПКУ с этими двумя файлами в окно браузера.
-4. Через 10 секунд получите ссылку вида https://xxxx.netlify.app — можно делиться.
-5. Позже в Site settings → Domain management подключите свой домен augusta-klimatechnik.de.
+## Подключение домена augusta-klimatechnik.de (после покупки)
+В панели регистратора (IONOS / Strato / All-inkl / Cloudflare) открыть управление
+DNS домена и создать записи:
 
-## Вариант 2: сразу свой домен (IONOS / Strato / All-inkl)
-1. Закажите хостинг-тариф с доменом augusta-klimatechnik.de (5–10 €/мес).
-2. В панели хостинга откройте «Файл-менеджер» (или WebFTP).
-3. Загрузите index.html и favicon.svg в корневую папку сайта (htdocs / html / www).
-4. Готово: сайт открывается по вашему домену.
+| Тип   | Имя (Host)      | Значение                    |
+|-------|-----------------|-----------------------------|
+| A     | @               | 185.199.108.153             |
+| A     | @               | 185.199.109.153             |
+| A     | @               | 185.199.110.153             |
+| A     | @               | 185.199.111.153             |
+| CNAME | www             | hasskin.github.io           |
 
-## Перед запуском заменить в index.html
+(если у регистратора уже стоят свои A/AAAA-записи «парковки» на @ — удалить их;
+AAAA для @ можно опционально добавить: 2606:50c0:8000::153, :8001::153,
+:8002::153, :8003::153)
+
+Дальше ничего делать не надо: кастом-домен в GitHub Pages уже прописан (файл
+`CNAME` в репозитории). Через 15–60 минут после смены DNS GitHub сам выпустит
+Let's-Encrypt-сертификат; затем включаем «Enforce HTTPS».
+
+## Почта info@augusta-klimatechnik.de
+Почта НЕ у GitHub — её даёт регистратор (у IONOS/Strato обычно входит в тариф).
+MX-записи регистратор ставит сам, A/CNAME-записи выше им не мешают.
+
+## Перед «настоящим» запуском заменить в index.html
 - Телефон 0821 000 00 00 (3 места: шапка, блок Notdienst, контакты)
 - Адрес Musterstraße 1
-- E-Mail info@augusta-klimatechnik.de
-- Добавить реальные Impressum и Datenschutzerklärung (обязательно по немецкому праву!)
+- Реальные Impressum и Datenschutzerklärung (обязательно по немецкому праву!)

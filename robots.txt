@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://augusta-klimatechnik.de/sitemap.xml
