@@ -173,6 +173,12 @@
   @media(max-width:1000px){.cards{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.cards{grid-template-columns:1fr}}
 
+  .brands{margin-top:38px;text-align:center}
+  .brands>p{font-size:14px;color:var(--steel)}
+  .brand-chips{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:14px 0 16px}
+  .brand-chips span{font-family:var(--disp);font-weight:600;font-size:16.5px;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 22px;box-shadow:var(--shadow-1)}
+  .brands-note{font-size:13.5px;color:var(--steel);max-width:44em;margin:0 auto}
+
   /* ---------- Process ---------- */
   .proc{background:#fff;border-block:1px solid var(--line)}
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:step}
@@ -349,6 +355,7 @@
           <li>Split- &amp; Multisplit-Anlagen</li>
           <li>Flüsterleiser Nachtbetrieb</li>
           <li>Heizen in der Übergangszeit</li>
+          <li>Schallschutz &amp; Verkleidung fürs Außengerät</li>
         </ul>
       </article>
       <article class="card reveal">
@@ -384,6 +391,14 @@
           <li>Service für Bestandsanlagen</li>
         </ul>
       </article>
+    </div>
+
+    <div class="brands reveal">
+      <p>Wir montieren Markengeräte von</p>
+      <div class="brand-chips" aria-label="Hersteller">
+        <span>Daikin</span><span>Mitsubishi&nbsp;Electric</span><span>Fujitsu</span><span>u.&nbsp;v.&nbsp;m.</span>
+      </div>
+      <p class="brands-note">Beratung herstellerneutral — wir empfehlen, was zu Ihrem Gebäude passt. Angebote kalkulieren wir transparent auf Basis der offiziellen Hersteller-Preislisten.</p>
     </div>
   </div>
 </section>
