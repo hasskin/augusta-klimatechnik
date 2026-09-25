@@ -199,6 +199,21 @@
   @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.step::after{display:none}}
   @media(max-width:520px){.steps{grid-template-columns:1fr}}
 
+  /* ---------- Service ---------- */
+  .svc-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+  .svc-lead{color:var(--steel);font-size:17px;margin-top:14px}
+  .svc-list{list-style:none;display:grid;gap:13px;margin-top:24px}
+  .svc-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--steel);line-height:1.55}
+  .svc-list b{color:var(--navy)}
+  .svc-check{flex:0 0 22px;height:22px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .svc-cta{margin-top:28px}
+  .svc-photos{position:relative;padding:0 0 74px 0}
+  .svc-img-1{width:100%;height:auto;border-radius:var(--r-lg);box-shadow:var(--shadow-2);display:block}
+  .svc-img-2{position:absolute;left:-6%;bottom:0;width:44%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-md);border:6px solid #fff;box-shadow:var(--shadow-2)}
+  .svc-chip{position:absolute;right:4%;bottom:36px;background:rgba(255,255,255,.94);border:1px solid var(--ice-200);border-radius:14px;padding:11px 16px;box-shadow:var(--shadow-1);font-family:var(--mono);font-weight:600;font-size:13px;color:var(--navy)}
+  .svc-chip span{color:var(--sky)}
+  @media(max-width:900px){.svc-grid{grid-template-columns:1fr;gap:36px}.svc-photos{order:-1;padding-bottom:64px}.svc-img-2{left:0}}
+
   /* ---------- Hilfe band ---------- */
   .sos{background:radial-gradient(1000px 500px at 85% -20%,rgba(34,211,238,.22),transparent 55%),var(--navy);color:#fff;overflow:hidden;position:relative}
   .sos-in{display:flex;align-items:center;justify-content:space-between;gap:36px;padding-block:66px;position:relative;flex-wrap:wrap}
@@ -262,6 +277,7 @@
     </a>
     <a class="link" href="#leistungen">Leistungen</a>
     <a class="link" href="#ablauf">Ablauf</a>
+    <a class="link" href="#service">Service</a>
     <a class="link" href="#kontakt">Kontakt</a>
     <a class="btn btn-grad" href="tel:+498210000000">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -423,6 +439,29 @@
       <div class="step reveal"><h3>Vor-Ort-Termin</h3><p>Wir schauen uns die Räume an, messen und beraten. Danach erhalten Sie ein klares Festpreis-Angebot.</p></div>
       <div class="step reveal"><h3>Montage</h3><p>Unser Team montiert zum vereinbarten Termin — bei einer Split-Anlage meist an einem Tag, sauber und mit Abnahmeprotokoll.</p></div>
       <div class="step reveal"><h3>Wartung</h3><p>Auf Wunsch übernehmen wir Wartung, Filterservice und Dichtheitskontrollen — planbar per Wartungsvertrag.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== SERVICE ======== -->
+<section class="sec" id="service">
+  <div class="wrap svc-grid">
+    <div class="reveal">
+      <p class="sec-eyebrow">// Service &amp; Wartung</p>
+      <h2>Klimaservice für Hotels, Büros und Gewerbe.</h2>
+      <p class="svc-lead">Eine Klimaanlage ist nur so gut wie ihr Service. Unsere Spezialität ist die laufende Betreuung von Klimatechnik in Hotels, Bürogebäuden, Praxen und Ladenflächen — zuverlässig, dokumentiert, mit einem festen Ansprechpartner für alle Geräte im Haus.</p>
+      <ul class="svc-list">
+        <li><span class="svc-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Wartungsvertrag mit planbaren Terminen</b> — Wartung außerhalb Ihrer Betriebs- und Belegungszeiten, ohne Störung von Gästen und Mitarbeitern.</span></li>
+        <li><span class="svc-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Filterservice &amp; Hygiene</b> — saubere, frische Luft in jedem Zimmer und an jedem Arbeitsplatz, dokumentiert nach jedem Einsatz.</span></li>
+        <li><span class="svc-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Dichtheitskontrollen nach F-Gas-VO</b> — gesetzlich vorgeschrieben; wir behalten Fristen im Blick und liefern die Protokolle.</span></li>
+        <li><span class="svc-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Priorität bei Störungen</b> — Vertragskunden werden zuerst eingeplant, Reparaturen haben Vorrang.</span></li>
+      </ul>
+      <a class="btn btn-grad svc-cta" href="#kontakt">Wartung anfragen</a>
+    </div>
+    <div class="svc-photos reveal" >
+      <img class="svc-img-1" src="img/service-buero.jpg" alt="Modernes Büro mit Lüftungs- und Klimatechnik an der Decke" width="1000" height="673" loading="lazy">
+      <img class="svc-img-2" src="img/service-hotelzimmer.jpg" alt="Wandgerät einer Klimaanlage in einem hellen Hotelzimmer" loading="lazy">
+      <span class="svc-chip"><span>✓</span> Wartungsvertrag · feste Termine</span>
     </div>
   </div>
 </section>
