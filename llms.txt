@@ -1,4 +1,4 @@
-# Augusta Klimatechnik GmbH i. G.
+# Augusta Klimatechnik (Augusta Klima Technik GmbH)
 
 > Meisterbetrieb für Klimatechnik in Augsburg: Planung, Montage und Wartung von
 > Klimaanlagen (Split/Multisplit), Lüftungssystemen mit Wärmerückgewinnung und
@@ -24,6 +24,7 @@
 
 - Marken: Daikin, Mitsubishi Electric, Fujitsu u. a.; Beratung herstellerneutral,
   Angebote auf Basis der offiziellen Hersteller-Preislisten
+- Handelsregister: Amtsgericht Augsburg, HRB 43276; Geschäftsführer: Vadim Lukashkin
 - Zertifiziert nach F-Gas-VO (EU) 2024/573, Kälteanlagenbauer-Handwerk
   (Handwerkskammer für Schwaben)
 - Ablauf: Anfrage → Vor-Ort-Termin mit Festpreis-Angebot → Montage (Split-Anlage
