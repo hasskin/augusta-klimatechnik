@@ -31,7 +31,6 @@ Let's-Encrypt-сертификат; затем включаем «Enforce HTTPS�
 MX-записи регистратор ставит сам, A/CNAME-записи выше им не мешают.
 
 ## Перед «настоящим» запуском заменить
-- Телефон 0821 000 00 00 (index.html: шапка, тёмный hilfe-баннер, контакты; impressum/)
 - После регистрации GmbH: в impressum/ вписать HRB-номер и USt-IdNr, убрать
   «i. G.» / «in Gründung» (impressum, datenschutz, футеры всех страниц)
 - Impressum и Datenschutzerklärung уже есть (/impressum/, /datenschutz/)
