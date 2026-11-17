@@ -262,7 +262,7 @@
   <div class="wrap">
     <p class="sec-eyebrow">// Bewerbung</p>
     <h2>Bewerbung in 2 Minuten – ohne Anschreiben.</h2>
-    <p class="sec-sub">Ein paar Angaben genügen, wir rufen dich innerhalb von 2 Werktagen zurück. Lebenslauf und Zeugnisse kannst du gern mitschicken, nötig sind sie für den ersten Kontakt nicht.</p>
+    <p class="sec-sub">Ein paar Angaben genügen, wir rufen dich innerhalb von 2 Werktagen zurück. Deinen Lebenslauf schickst du einfach per E-Mail an <a href="mailto:info@augusta-klimatechnik.de?subject=Bewerbung" style="color:var(--blue-soft);text-decoration:underline">info@augusta-klimatechnik.de</a> – nötig ist er für den ersten Kontakt nicht.</p>
     <div class="apply">
       <form class="panel" id="bewerbung">
         <h3>Kurzbewerbung</h3>
@@ -277,7 +277,7 @@
         </div>
         <div class="field"><label for="b-msg">Kurz zu dir (optional)</label><textarea id="b-msg" name="nachricht" rows="3" placeholder="Erfahrung, Führerschein …"></textarea></div>
         <button class="btn btn-grad" type="submit">Bewerbung absenden</button>
-        <p class="hint">Das Formular öffnet eine vorausgefüllte E-Mail in deinem E-Mail-Programm – dort kannst du Lebenslauf oder Zeugnisse anhängen. Hinweise zum Umgang mit Bewerberdaten in der <a href="/datenschutz/#bewerbungen">Datenschutzerklärung</a>.</p>
+        <p class="hint"><b style="color:var(--navy)">Lebenslauf?</b> Das Formular öffnet eine vorausgefüllte E-Mail in deinem E-Mail-Programm – häng deinen Lebenslauf (PDF oder Handyfoto) einfach dort an. Hinweise zum Umgang mit Bewerberdaten in der <a href="/datenschutz/#bewerbungen">Datenschutzerklärung</a>.</p>
       </form>
       <div class="panel">
         <h3>Lieber direkt?</h3>
@@ -323,7 +323,7 @@
     ev.preventDefault();
     const f=ev.target;
     const body=encodeURIComponent(
-      `Name: ${f.name.value}\nTelefon: ${f.tel.value}\nStelle: ${f.stelle.value}\nAusbildung / Beruf: ${f.beruf.value}\nFrühester Start: ${f.start.value}\n\n${f.nachricht.value}\n\n(Lebenslauf / Zeugnisse gern im Anhang)`);
+      `Name: ${f.name.value}\nTelefon: ${f.tel.value}\nStelle: ${f.stelle.value}\nAusbildung / Beruf: ${f.beruf.value}\nFrühester Start: ${f.start.value}\n\n${f.nachricht.value}\n\n(Lebenslauf bitte im Anhang)`);
     location.href=`mailto:info@augusta-klimatechnik.de?subject=${encodeURIComponent('Bewerbung – '+f.stelle.value+' – '+f.name.value)}&body=${body}`;
   });
 </script>
