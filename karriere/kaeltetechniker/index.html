@@ -112,6 +112,8 @@
   .brand{display:flex;align-items:center;gap:13px;margin-right:auto}
   .brand-name{font-family:var(--disp);font-weight:600;font-size:23px;color:var(--navy);letter-spacing:-.02em}
   .brand-name small{display:block;font-family:var(--body);font-weight:500;font-size:10.5px;letter-spacing:.24em;color:var(--sky);text-transform:uppercase;margin-top:-3px}
+  .brand-name small{white-space:nowrap}
+  @media(max-width:600px){.brand-gmbh{display:none}}
   .nav a.link{font-weight:500;font-size:15px;color:var(--steel);transition:color .18s}
   .nav a.link:hover,.nav a.link[aria-current]{color:var(--navy)}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--disp);font-weight:600;font-size:15.5px;padding:13px 24px;border-radius:999px;transition:transform .18s,box-shadow .18s,border-color .18s;cursor:pointer;border:0}
@@ -218,7 +220,7 @@
           <path d="M3 8h13a3.5 3.5 0 1 0-3.3-4.6M3 13h17a3.5 3.5 0 1 1-3.3 4.6M3 18h7"/>
         </g>
       </svg>
-      <span class="brand-name">augusta<small>Klimatechnik GmbH</small></span>
+      <span class="brand-name">augusta<small>Klimatechnik<span class="brand-gmbh"> GmbH</span></small></span>
     </a>
     <a class="link" href="/#leistungen">Leistungen</a>
     <a class="link" href="/#service">Service</a>
